@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: http-server-service
+spec:
+  selector:
+    app: http-server
+  ports:
+  # Default port used by the image
+  - port: 8080
